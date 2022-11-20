@@ -67,22 +67,23 @@ export default function GovernanceDetails() {
                             header={'depositEndTime'}
                             content={parseAndLocaleString(data?.depositEndTime)}
                         />
+
                         <Divider></Divider>
                         <DivContent
                             header={'yes'}
-                            content={data?.voteResult?.yes}
+                            content={data?.tally?.yes}
                         />
                         <DivContent
                             header={'abstain'}
-                            content={data?.voteResult?.abstain}
+                            content={data?.tally?.abstain}
                         />
                         <DivContent
                             header={'no'}
-                            content={data?.voteResult?.no}
+                            content={data?.tally?.no}
                         />
                         <DivContent
                             header={'no_with_veto'}
-                            content={data?.voteResult?.no_with_veto}
+                            content={data?.tally?.no_with_veto}
                         />
                     </>
                 )}
